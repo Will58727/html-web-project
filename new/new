@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+​
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+​
+        body {
+            font-size: 50px;
+            text-align: center;
+            background-color: grey;
+        }
+​
+        
+        .content-padding {
+            padding: 20px;
+        }
+​
+        .row {
+            width: 100%;
+        }
+​
+        .third-col {
+            width: 33.33%;
+            height: 100%;
+            float: left;
+        }
+​
+        .half-col {
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+        
+        
+        #row2 {
+            height: 200px;
+        }
+        
+    </style>
+​
+</head>
+<body>
+    <div id="row1" class="row"> 
+​
+        <div id="row1-col1" class="content-padding" style="background-color: red;">
+            Header
+        </div>
+​
+    </div>
+​
+    <div id="row2" class="row"> 
+​
+        <div id="row2-col1" class="content-padding third-col" style="background-color: orange;">
+            Project 1
+        </div>
+​
+        <div id="row2-col2" class="third-col">
+            
+            <div id="row2-col2-row1" class="content-padding row" style="background-color: yellow;">
+                Gallery
+            </div>
+​
+            <div id="row2-col2-row2" class="content-padding row" style="background-color: green;">
+                Project 2
+            </div>
+​
+        </div>
+​
+        <div id="row2-col3" class="content-padding third-col" style="background-color: blue;">
+            Project 3
+        </div>
+        
+    </div>
+​
+    <div id="row3" class="row"> 
+​
+        <div id="row3-col1" class="content-padding half-col" style="background-color: purple;">
+            About Me
+        </div>
+​
+        <div id="row3-col2" class="content-padding half-col" style="background-color: pink;">
+            CV
+        </div>
+        
+    </div>
+</body>
+</html>
