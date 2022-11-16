@@ -1,35 +1,42 @@
 const folderpath = "///C:/Users/will/OneDrive/Documents/GitHub/html-web-project/new/css-project-1/html-classwork-undefined/images/";
 
-const btn = document.getElementById("bloodMoon");
+const img = document.getElementById("Moon-Img");
 
-btn.addEventListener('click', function onClick(event) {
-    event.target.style.backgroundColor = 'red';});
+const paragraphs = document.getElementsByTagName("p")
+
+let resetButton = document.getElementById("resetButton")
+
+resetButton.addEventListener('click', function onClick(event) {
+    window.location.reload();
+});
 
   
 
-let image = document.getElementById("moonImage");
-function fullMoon() {
-    let image = document.getElementById("moonImage");
-    image.src = folderpath + "Full-Moon.jpg"
-    
+function changeButton1() {
+    document.body.style.backgroundColor = "red";
+    document.body.style.fontFamily = "Monospace";
+    img.src = folderpath + "Blood-Moon.jpg";
+    for (let i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].style.fontSize = "35px";
+    }
 }
 
-function bloodMoon() {
-    let image = document.getElementById("moonImage");
-    image.src = folderpath + "Blood-Moon.jpg"
-    
-    
-    
+function changeButton2() {
+    document.body.style.backgroundColor = "blue";
+    document.body.style.fontFamily = "Brush Script MT";
+    img.src = folderpath + "Full-Moon.jpg";
+    for (let i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].style.color = "grey";
+    }
+
 }
 
-function eclipse() {
-    let image = document.getElementById("moonImage");
-    image.src = folderpath + "eclipse.jpg"
-    
-    
-}
+function changeButton3() {
+    document.body.style.backgroundColor = "green";
+    document.body.style.fontFamily = "Copperplate, fantasy";
+    img.src = folderpath + "Eclipse.jpg";
+    for (let i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].style.textAlign = "right";
+    }
 
-function btn1() {
-document.getElementById("btn1");
-bloodMoon = backgroundColor;
 }

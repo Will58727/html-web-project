@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="Moon-Page-bp.js"></script>
     <title>types of moons</title>
     <style>
         body {
@@ -38,7 +37,7 @@
 <body>
     <article>
         <div>
-            <img id="moonImage" src="images/Blood-Moon.JPG" alt="blood moon" >
+            <img id="Moon-Img" src="images/Blood-Moon.JPG" alt="blood moon" >
 
 
         </div>
@@ -74,10 +73,14 @@
 
         </p>
         
-        <button id="btn" onclick="bloodMoon()" class="btn1 button button1">blood moon</button>
-        <button id="btn" onclick="fullMoon()" class="button button2">fullmoon</button>
-        <button id="btn" onclick="eclipse()" class="button button3">eclipse</button>
+        <button onclick="changeButton1()" class="btn1 button button1">blood moon</button>
+        <button onclick="changeButton2()" class="button button2">fullmoon</button>
+        <button onclick="changeButton3()" class="button button3">eclipse</button>
+        <!-- <button onclick="window.location.reload()" class="button">Reset</button> -->
+        <button  id="resetButton">Reset</button>
         
     </article>
+    <script type="text/javascript" src="Moon-Page-bp.js"></script>
+
 </body>
 </html>
